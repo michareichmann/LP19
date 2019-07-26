@@ -3,18 +3,18 @@
 \begin{frame}{Detectors}
 
 	\vspace*{-1ex}
-	\subfigs{\subfig{.3}{3DATLAS}[II6-B5]}{\subfig{.3}{3DCMS}[II6-B6]}\vspace*{-3ex}
+	\subfigs{\subfig{.3}{3DATLAS}[B5]}{\subfig{.3}{3DCMS}[B6]}\vspace*{-3ex}
 	\small{
-	\nicetab{|l|c|c|}{	&	\good{II6-B5}	& \good{II6-B6} \\\hline
-	readout chip (ROC)	& FEI4-b											& PSI46digv2.1respin 					\\
-	pixel pitch					& \SI{50x250}{\micro\meter}		& \SI{150x100}{\micro\meter}	\\
+	\nicetab{|l|c|c|}{	&	\good{B5}	& \good{B6} \\\hline
+	readout chip (ROC)	& FE-I4B											& PSI46digv2.1respin 					\\
+	pixel pitch					& \SI{250x50}{\micro\meter}		& \SI{150x100}{\micro\meter}	\\
 	3D cell size				& \SI{50x50}{\micro\meter}		& \SI{50x50}{\micro\meter}		\\
-	ganging							& \SI{1x5}{}									&	\SI{3x2}{}									\\
+	ganging							& \SI{5x1}{}									&	\SI{3x2}{}									\\
 	size								& \SI{4.90x4.94}{\milli\meter}& \SI{4.85x4.90}{\milli\meter}\\
-	thickness						& \SI{510}{\micro\meter}			& ?														\\
+	thickness						& \SI{510}{\micro\meter}			& \SI{500}{\micro\meter}			\\
 	\SI{50x50}{pixels}	&	\SI{53x67}{}								&	\SI{67x53}{}								\\
 	3D columns					& 7223												& 7223												\\
-	column diameter		& \SI{2.6}{\micro\meter}			& \SI{2.6}{\micro\meter}			\\
+	column diameter			& \SI{2.6}{\micro\meter}				& \SI{2.6}{\micro\meter}		\\
 	active area					& \SI{3.2x3.5}{\milli\meter}	& \SI{3.45x3.19}{\milli\meter}\\
 	bump bonding				& tin silver (IFAE)						& indium (Princeton)					\\
 	}}
@@ -23,12 +23,12 @@
 \subsection{II6-B5 (\SI{1x5}{} Ganging)}
 \begin{frame}{II6-B5 - Efficiencies @ CERN}
 
-	\subfigs{\subfig{.46}{EffAtL}[High threshold (\SI{1500}{e})]}{\subfig{.46}{EffAtH}[Low threshold (\SI{1000}{e})]}
+	\subfigs{\subfig{.46}{EffAtH}[Efficiency map.]}{\subfig{.46}{EffVolAtl}[Efficiency vs. bias voltage]}
 	
 	\begin{itemize}\itemfill
 		\item spatial resolution of \SI{\sim3}{\micro\meter}
-		\item two different tunings of the FEI4 chip
-		\item efficiency with low threshold significantly higher: \SI{97.7}{\%}
+		\item threshold of the chip: \SI{\sim1000}{e}
+		\item efficiency in red fiducial area \SI{97.7}{\%}
 		\item inefficiencies most likely due to bump bonding issues
 	\end{itemize}
 	
@@ -52,9 +52,9 @@
 	\subfigs{\subfig{.45}{EM1}[Efficiency Map].}{\subfig{.45}[r]{EffVol}[Efficiency vs. voltage.]}
 	
 	\begin{itemize}\itemfill
-		\item beam test right after the first bump bonding (top right corner badly bonded)
 		\item spatial resolution of \orderof{\SI{100}{\micro\meter}}
-		\item efficiency in red fiducial area: \SI{99.2}{\%} (\ra columns (\SI{.4}{\%}) \& low field regions)
+		\item magenta area \ra bump bonding problems, green area \ra void in the diamond
+		\item efficiency in blue box: \SI{99.2}{\%} (\ra \SI{.4}{\%} due to columns)
 		\item already fully efficient at \SI{30}{\volt}
 		\item ROC stopped working after this beam test
 	\end{itemize}
@@ -66,9 +66,9 @@
 	\fig{.5}{PH1}[Pulse height distribution.]	
 	
 	\begin{itemize}\itemfill
-		\item trimmed threshold: \SI{\sim1500}{e}
+		\item threshold of the chip: \SI{\sim1500}{e}
 		\item Langau MPV: \SI{13500}{e}
-		\item unreal distribution below threshold most likely due to data transmission problems
+		\item distribution below threshold under investigation (maybe data transmission problems)
 	\end{itemize}
 	
 \end{frame}
@@ -94,11 +94,11 @@
 	\vspace*{-2ex}\fig[r]{.5}{PH3}[Pulse height distribution.]\vspace*{-2ex}
 	
 	\begin{itemize}\itemfill
-		\item trimmed threshold: \SI{\sim3700}{e}
+		\item threshold of the chip: \SI{\sim3700}{e}
 		\item Langau MPV: \SI{11000}{e}
-		\item pulse height very similar to FEIV-b result at CERN
+		\item pulse height very similar to \SI{5x1} result at CERN
 		\item beam particles at CERN have less energy loss \ra lower MPV
-		\item unreal distribution below threshold most likely due to data transmission problems
+		\item also distribution below threshold
 	\end{itemize}
 	
 \end{frame}

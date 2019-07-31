@@ -23,25 +23,26 @@
 \subsection{B5 (\SI{5x1}{} Ganging)}
 \begin{frame}{II6-B5 - Efficiencies @ CERN}
 
-	\subfigs{\subfig{.46}{EffAtH}[Efficiency map.]}{\subfig{.46}{EffVolAtl}[Efficiency vs. bias voltage]}
+	\subfigs{\subfig[.5]{.45}{EffMapB5}[Efficiency map, low threshold.]}{\subfig[.45]{.45}[r]{EffVolB5}[Efficiency vs. bias voltage.]}
 	
 	\begin{itemize}\itemfill
 		\item spatial resolution of \SI{\sim3}{\micro\meter}
 		\item threshold of the chip: \SI{\sim1000}{e}
-		\item efficiency in red fiducial area \SI{97.7}{\%}
-		\item inefficiencies most likely due to bump bonding issues
+		\item efficiency in red fiducial area \SI{98.2}{\%}
+		\item inefficiencies most likely due to processing issues
 	\end{itemize}
 	
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Time Over Threshold}
 
-	\fig{.5}{SDAtH}[Time over threshold]	
+	\fig{.5}{PHB5L}[Time over threshold distribution.]	
 	
 	\begin{itemize}\itemfill
+		\item looks very similar to silicon distribution
 		\item \SI{5}{tot} $\approx$ \SI{11000}{e}
-		\item mean of the ToT distribution: 6.7 \ra \SI{\sim15000}{e}
-		\item roughly \SI{80}{\%} the induced charge was collected
+		\item mean of the ToT distribution: 6.7 \ra \SI{\sim14500}{e}
+		\item about \SI{80}{\%} the induced charge was collected
 	\end{itemize}
 	
 \end{frame}
@@ -75,7 +76,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Efficiencies @ CERN}
 
-	\vspace*{-2ex}\fig{.5}{EffCern1}[Efficiency at threshold of \SI{\sim3500}{e}]\vspace*{-2ex}
+	\vspace*{-2ex}\subfigs{\subfig[.5]{.45}{EffMapB6}[Efficiency at threshold of \SI{\sim3500}{e}.]}{\subfig[.45]{.45}[r]{EffVolB6}[Efficiency vs. bias voltage.]}\vspace*{-2ex}
+% 	\fig{.5}{EffCern1}[Efficiency at threshold of \SI{\sim3500}{e}]
 	
 	\begin{itemize}\itemfill
 		\item high resolution measurement at CERN
@@ -84,18 +86,18 @@
 		\begin{itemize}
 			\item no removal of old bumps, no change of surface metallisation
 		\end{itemize}
-		\item similar efficiency: \SI{99.1}{\%}
+		\item same efficiency: \SI{99.2}{\%}
 	\end{itemize}
 	
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Pulse Height @ CERN}
 
-	\vspace*{-2ex}\fig[r]{.5}{PH3}[Pulse height distribution.]\vspace*{-2ex}
+	\vspace*{-2ex}\fig{.5}{PH3}[Pulse height distribution.]\vspace*{-2ex}
 	
 	\begin{itemize}\itemfill
 		\item threshold of the chip: \SI{\sim3700}{e}
-		\item mean of the Langau fit: \SI{\sim15000}{e}
+		\item mean from MC of Langau fit: \SI{\sim14500}{e}
 		\item pulse height very similar to \SI{5x1}{} result at CERN
 		\item distribution below threshold not understood (maybe data transmission issues)
 	\end{itemize}
